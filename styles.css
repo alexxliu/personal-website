@@ -1,0 +1,56 @@
+/* Basic styling for the header buttons */
+body, header {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 0;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  padding: 20px 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: 'Roboto Mono', monospace;
+  transition: background-color 0.5s;
+}
+
+nav button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.left-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.right-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for the sections */
+section {
+  padding: 50px;
+}
+
+/* Add more CSS styles as per your preference */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: aqua;
+}
+
