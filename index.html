@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home   |   Alex Liu</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
@@ -29,30 +29,41 @@
           <div class="home-content-wrapper">
             <p class="home-paragraph">Hey! I'm Alex, an undergrad CS student at Purdue University, IN.</p>
             <div class="home-images">
-              <img src="./images/info/linkedin.png" alt="LinkedIn Icon">
-              <img src="./images/info/github.png" alt="GitHub Icon">
-              <img src="./images/info/resume.png" alt="Resume Icon">
+              <a href="https://www.linkedin.com/in/alex-liu-948ab4250/" target="_blank">
+                <img src="./images/info/linkedin.png" alt="LinkedIn Icon">                
+              </a>
+              <a href="https://github.com/alexxliu" target="_blank">
+                <img src="./images/info/github.png" alt="GitHub Icon">  
+              </a>
+              <a href="">
+                <img src="./images/info/resume.png" alt="Resume Icon">                              
+              </a>             
             </div>
           </div>
         </div>
       </section>
 
-    <section id="projects">
-        <!-- Your projects content goes here -->
-    </section>
-
     <section id="about">
         <!-- Your about content goes here -->
     </section>
 
+    <section id="projects">
+        <!-- Your projects content goes here -->
+    </section>
+
     <section id="contact">
-        <!-- Your contact content goes here -->
+        <form class="contact-form" action="contactform.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <textarea id="message" name="message" placeholder="Message"></textarea>         
+            <button type="submit">SEND</button>
+          </form>
     </section>
 
     <script src="script.js"></script>
 </body>
 </html>
-
 
 
 <!--

@@ -112,4 +112,9 @@ section {
   width: 40px; 
   height: auto;
   margin-left: 20px;
+  transition: transform 0.25s ease;
+}
+
+.home-images img:hover {
+  transform: scale(1.2);
 }
