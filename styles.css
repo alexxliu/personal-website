@@ -1,4 +1,4 @@
-/* Basic styling for the header buttons */
+/*HEADER STYLING SECTION*/
 body, header {
   margin: 0;
   padding: 0;
@@ -7,7 +7,11 @@ body, header {
 header {
   background-color: #fff;
   padding: 0;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 nav {
@@ -44,13 +48,68 @@ section {
   padding: 50px;
 }
 
-/* Add more CSS styles as per your preference */
+/* HOME STYLING SECTION */
 #home {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   height: 100vh;
   text-align: center;
-  background-color: aqua;
+
+  background-image: url('./images/home_wallpaper.png'); 
+  background-size: cover; 
+  background-position: center;
 }
 
+.home-content {
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
+.home-heading {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px; 
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.home-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-paragraph {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #222222;
+  margin-right: 5vh;
+  text-align: right;
+
+  border: 3px solid #333;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 5px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.home-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin-left: -5vh;
+  padding-right: 250px;
+}
+
+.home-images img {
+  width: 40px; 
+  height: auto;
+  margin-left: 20px;
+}
