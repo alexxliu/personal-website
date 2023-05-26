@@ -36,6 +36,7 @@ nav button {
   cursor: pointer;
   font-size: 2.4vw; /*SCALING VALUE*/
   font-family: 'Roboto Mono', monospace;
+  color: #222;
   transition: background-color 0.5s;
 }
 
@@ -194,19 +195,18 @@ section {
 }
 
 /* 
-when the window size is less than 400px, these elements will stop shrinking 
-also collapses the right header buttons and uses a hamburger sidebar
+when the window size is less than 999px, collapses the right header buttons and uses a hamburger sidebar
 */
-@media(max-width: 800px) {
+@media(max-width: 999px) {
 
   /* hide right buttons and display menu icon */
-  .right-buttons {
-    display: none;
+  .left-buttons .home{
+    padding: 20px 40px;
+    font-size: 24px;
   }
 
-  .left-buttons .home{
-    padding: 8px 16px;
-    font-size: 9.6px;
+  .right-buttons {
+    display: none;
   }
 
   .menu-icon {
@@ -214,8 +214,8 @@ also collapses the right header buttons and uses a hamburger sidebar
   }
 
   .menu-icon img {
-    width: 35px;
-    height: 25px;
+    width: 87.5px;
+    height: 62.5px;
     cursor: pointer;
     align-items: center;
     transition: transform 0.25s ease;
@@ -273,24 +273,24 @@ also collapses the right header buttons and uses a hamburger sidebar
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
 
   /* constant sizes */
   .home-content {
-    max-width: 300px;
+    max-width: 262.5px;
   }
 
   .home-heading {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .home-paragraph {
-    font-size: 9.6px;
-    padding-right: 10px;
+    font-size: 8.4px;
+    padding-right:8.75px;
   }
 
   .home-images img{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 }
