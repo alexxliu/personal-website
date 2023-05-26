@@ -18,3 +18,27 @@ function showSection(sectionId) {
     var selectedButton = document.querySelector('nav button[data-section="' + sectionId + '"]');
     selectedButton.classList.add('active');
 }
+
+function toggleSideBar() {
+    var sidebar = document.getElementById('sidebar');
+    var sidebarElements = document.getElementById('sidebar-elements');
+    var overlay = document.querySelector('.overlay');
+  
+    sidebar.classList.toggle('sidebar-open');
+    sidebarElements.classList.toggle('sidebar-elements-open');
+  
+    if (sidebar.classList.contains('sidebar-open')) {
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        document.body.appendChild(overlay);
+      }
+    } else {
+      if (overlay) {
+        overlay.remove();
+      }
+    }
+  }
+  
+
+

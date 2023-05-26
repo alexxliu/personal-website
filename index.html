@@ -4,30 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home   |   Alex Liu</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles1.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
+  <div class="container">
     <header>
-        <nav>
-            <div class="left-buttons">
-                <button class="home active" onclick="showSection('home')">HOME</button>
-            </div>
-            <div class="right-buttons">
-                <button onclick="showSection('about')">ABOUT</button>
-                <button onclick="showSection('projects')">PROJECTS</button>
-                <button onclick="showSection('contact')">CONTACT</button>
-            </div>
-        </nav>
+      <nav>
+        <div class="left-buttons">
+          <button class="home active" onclick="showSection('home')">HOME</button>
+        </div>
+        <div class="right-buttons">
+          <button onclick="showSection('about')">ABOUT</button>
+          <button onclick="showSection('projects')">PROJECTS</button>
+          <button onclick="showSection('contact')">CONTACT</button>
+        </div>
+        <div class="menu-icon" onclick="toggleSideBar()">
+          <img src="./images/hamburger.jpg" alt="Menu">
+        </div>      
+      </nav>
+      <div id="sidebar">
+        <ul id="sidebar-elements">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </header>
 
     <section id="home">
         <div class="home-content">
           <h1 class="home-heading">Alex Liu</h1>
           <div class="home-content-wrapper">
-            <p class="home-paragraph">Hey! I'm Alex, an undergrad CS student at Purdue University, IN.</p>
+            <div class="home-paragraph">
+              <p>Hey! I'm Alex, an undergrad CS</p>
+              <p>student at Purdue University, IN.</p>
+            </div>
             <div class="home-images">
               <a href="https://www.linkedin.com/in/alex-liu-948ab4250/" target="_blank">
                 <img src="./images/info/linkedin.png" alt="LinkedIn Icon">                
@@ -62,6 +76,7 @@
     </section>
 
     <script src="script.js"></script>
+  </div>
 </body>
 </html>
 
