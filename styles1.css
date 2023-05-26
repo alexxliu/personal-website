@@ -197,7 +197,7 @@ section {
 when the window size is less than 400px, these elements will stop shrinking 
 also collapses the right header buttons and uses a hamburger sidebar
 */
-@media (max-width: 400px) {
+@media(max-width: 800px) {
 
   /* hide right buttons and display menu icon */
   .right-buttons {
@@ -271,6 +271,9 @@ also collapses the right header buttons and uses a hamburger sidebar
   #sidebar-elements li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
+}
+
+@media (max-width: 400px) {
 
   /* constant sizes */
   .home-content {
