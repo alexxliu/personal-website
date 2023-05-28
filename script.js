@@ -1,23 +1,12 @@
-function showSection(sectionId) {
-    // Hide all sections
-    var sections = document.querySelectorAll('section');
-    sections.forEach(function(section) {
-        section.style.display = 'none';
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior : "smooth"
     });
+  });
+});
 
-    // Show the selected section
-    var selectedSection = document.getElementById(sectionId);
-    selectedSection.style.display = 'block';
-
-    // Update active button styling
-    var buttons = document.querySelectorAll('nav button');
-    buttons.forEach(function(button) {
-        button.classList.remove('active');
-    });
-
-    var selectedButton = document.querySelector('nav button[data-section="' + sectionId + '"]');
-    selectedButton.classList.add('active');
-}
 
 function toggleSideBar() {
     var sidebar = document.getElementById('sidebar');
