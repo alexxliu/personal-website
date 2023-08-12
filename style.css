@@ -1,0 +1,322 @@
+/*HEADER STYLING SECTION*/
+
+/* the container wraps around the whole html body and makes sure to set an upper limit on how big a webpage is*/
+.container {
+  max-width: 3840px;
+  background-color: #f9f9f9;
+}
+
+/* initializes margin and padding to 0 to remove white gaps in the page */
+body, header {
+  margin: 0;
+  padding: 0;
+}
+
+/* customizes header bar */
+header {
+  background-color: #fff;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* makes sure that the header bar is always showing */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* for all buttons */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* for each individual button */
+nav button {
+  padding: 2vw 4vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.4vw; /*SCALING VALUE*/
+  font-family: 'Roboto Mono', monospace;
+  color: #222;
+  transition: background-color 0.5s;
+}
+
+/* for each buttons hover effect */
+nav button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* left and right button alignment */
+.left-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.right-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* hides the hamburger menu icon */
+.menu-icon {
+  display: none;
+}
+
+/* hides the sidebar and sidebar elements */
+.sidebar {
+  display: none;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+/* Styling for the sections */
+section {
+  padding: 6px;
+}
+
+/* HOME STYLING SECTION */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  min-height: 800px;
+  text-align: center;
+
+  background-image: url('./images/home_wallpaper.jpg'); 
+  background-size: cover; 
+  background-position: center;
+}
+
+/* max width and initialize margin for paragraph and icons */
+.home-content {
+  max-width: 75vw; /*SCALING VALUE*/
+  margin: 0 auto; 
+}
+
+/* style large name */
+.home-heading {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10vw; /*SCALING VALUE*/
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+/* paragraph styling */
+.home-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4vw; /*SCALING VALUE*/
+  color: #222222;
+  margin-right: 5vh;
+  text-align: right;
+  white-space: nowrap;
+
+  border: 3px solid #333;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 5px;
+  padding-right: 2.5vw; /*SCALING VALUE*/
+  box-sizing: border-box;
+}
+
+/*removes the gap between top paragraph and bottom paragraph*/
+.home-paragraph p {
+  margin: 0;
+}
+
+.home-paragraph p:first-child {
+  margin-bottom: 0;
+}
+
+.home-paragraph p:last-child {
+  margin-top: 0;
+}
+
+/* styling for the icons */
+.home-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin-left: -5vh;
+  padding-right: 250px;
+}
+
+.home-images img {
+  width: 4vw; /*SCALING VALUE*/
+  height: 4vw; /*SCALING VALUE*/
+  margin-left: 20px; 
+  transition: transform 0.25s ease;
+}
+
+.home-images img:hover {
+  transform: scale(1.2);
+}
+
+.scroll-img {
+  margin-top: 35vh;
+}
+
+.scroll-img img {
+  width: 100px;
+  height: 90px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-img img:hover {
+  transform: scale(1.3);
+}
+
+/* when the window is less than 1000px, these elements will scale down */
+@media (min-width: 1000px) {
+
+  nav button {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+
+  .home-content {
+    max-width: 750px;
+  }
+
+  .home-heading {
+    font-size: 100px;
+  }
+
+  .home-paragraph {
+    font-size: 24px;
+    padding-right: 25px;
+  }
+
+  .home-images img{
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+/* 
+when the window size is less than 999px, collapses the right header buttons and uses a hamburger sidebar
+*/
+@media(max-width: 999px) {
+
+  /* hide right buttons and display menu icon */
+  .left-buttons .home{
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+
+  .right-buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon img {
+    width: 87.5px;
+    height: 62.5px;
+    cursor: pointer;
+    align-items: center;
+    transition: transform 0.25s ease;
+  }
+
+  .menu-icon img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* displays the sidebar */
+  .sidebar-open {
+    display: block;
+    position: fixed;
+    width: 140px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    right: 0;
+    transition: all 1s ease;
+  }
+
+  /* overlay dims the background when the hamburger is clicked */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+    z-index: 998; /* Lower z-index than the sidebar */
+    transition: opacity 0.5s ease; /* Apply a transition for smooth dimming effect */
+    pointer-events: none; /* Allow interactions with elements below the overlay */
+  }
+
+  /* Show the sidebar elements when the sidebar is open */
+  .sidebar-open #sidebar-elements {
+    display: block; 
+  }
+  
+  #sidebar-elements li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    height: 60px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  #sidebar-elements li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 350px) {
+
+  /* constant sizes */
+  .home-content {
+    max-width: 262.5px;
+  }
+
+  .home-heading {
+    font-size: 35px;
+  }
+
+  .home-paragraph {
+    font-size: 8.4px;
+    padding-right:8.75px;
+  }
+
+  .home-images img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-height: 800px) {
+  .scroll-img {
+    margin-top: 280px;
+  }
+}

@@ -1,0 +1,115 @@
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #fff;
+
+}
+  
+.project-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #AC9362;
+    margin-top: -420px;
+}
+  
+.project-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; /* Adjust the gap between the boxes */
+    width: 1200px;
+    max-width: 1200px;
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: -200px;
+    padding-top: 30px;
+}
+  
+.project-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(50%);
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+.project-box:hover {
+    background-color: #e0e0e0;
+}
+
+.project-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-box a{
+    text-decoration: none;
+}
+
+.project-box h3 {
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: #222;
+    text-decoration: underline;
+}
+
+.project-box h5 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #AC9362;
+}
+
+.project-box p{
+    font-size: 15px;
+    color: #222;
+}
+
+
+@media (max-width: 1200px) {
+
+    .project-header {
+        font-size: 25px;
+        margin-top: -450px;
+    }
+
+    .project-boxes {
+        gap: 0;
+        width: 300px;
+        max-width: 300px;
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes horizontally */
+        flex-wrap: nowrap;
+        margin-top: 220px;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .projects-content {
+        height: 950px;
+    }
+
+    .project-box {
+        width: 100%; /* Set width to 100% for stacked boxes */
+        margin-bottom: 20px; /* Add spacing between stacked boxes */
+    }
+
+    .project-box h3 {
+        font-size: 14px;
+    }
+
+    .project-box h5 {
+        font-size: 10px;
+    }
+
+    .project-box p {
+        font-size: 8px;
+    }
+
+}

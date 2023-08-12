@@ -1,0 +1,179 @@
+.about-content {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 50vh;
+    text-align: center;
+    min-height: 500px;
+}
+
+.about-text {
+    width: 65vw;
+    text-align: left;
+}
+
+.section-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    color: #AC9362;
+}
+
+.section-head h2 {
+    margin-bottom: 0;
+}
+
+.about-body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+}
+
+.about-body p {
+    margin-top: 0;
+}
+
+.about-body a{
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s ease;
+}
+
+.about-body a:hover{
+    color: lightseagreen;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.skills p {
+    font-size: 4.5vw;
+    font-family: 'Poppins', sans-serif;
+
+    border: 1px solid #222;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 2.5vw;
+    box-sizing: border-box;
+}
+
+.language-icons {
+    margin-left: 2vw;
+}
+
+.language-icons img {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 3vw;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo:nth-child(1){
+    transition-delay: 100ms;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 300ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(5){
+    transition-delay: 500ms;
+}
+
+.logo:nth-child(6){
+    transition-delay: 600ms;
+}
+
+@media (min-width: 1000px) {
+    .about-text {
+        width: 650px;
+    }
+
+    .section-head {
+        font-size: 32px;
+    }
+
+    .about-body {
+        font-size: 25px;
+    }
+
+    .skills p {
+        font-size: 45px;
+        padding-right: 25px;
+    }
+
+    .language-icons {
+        margin-left: 20px;
+    }
+
+    .language-icons img {
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 350px){
+    .about-text {
+        width: 227.5px;
+    }
+
+    .section-head {
+        font-size: 8.75px;
+    }
+
+    .about-body {
+        font-size: 8.75px;
+    }
+
+    .skills p {
+        font-size: 15.75px;
+        padding-right: 8.75px;
+    }
+
+    .language-icons {
+        margin-left: 7px;
+    }
+
+    .language-icons img {
+        width: 17.5px;
+        height: 17.5px;
+        margin-left: 5px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}

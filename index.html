@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Liu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-about.css">
+  <link rel="stylesheet" href="style-projects.css">
+  <link rel="stylesheet" href="style-footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap">
+  <script defer src="scroll.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="left-buttons">
+          <a href="#home">
+           <button class="home active" onclick="showSection('home')">HOME</button>           
+          </a>
+        </div>
+        <div class="right-buttons">
+          <a href="#about">
+            <button>ABOUT</button>            
+          </a>
+          <a href="#projects">
+          <button>PROJECTS</button>            
+          </a>
+          <a href="#contact">
+            <button>CONTACT</button>            
+          </a>
+        </div>
+        <div class="menu-icon" onclick="toggleSideBar()">
+          <img src="./images/hamburger.jpg" alt="Menu">
+        </div>      
+      </nav>
+      <div id="sidebar">
+        <ul id="sidebar-elements">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="home-content">
+        <h1 class="home-heading">Alex Liu</h1>
+        <div class="home-content-wrapper">
+          <div class="home-paragraph">
+            <p>Hey! I'm Alex, an undergrad CS</p>
+            <p>student at Purdue University, IN.</p>
+          </div>
+          <div class="home-images">
+            <a href="https://www.linkedin.com/in/alex-liu-948ab4250/" target="_blank">
+              <img src="./images/info/linkedin.png" alt="LinkedIn Icon">                
+            </a>
+            <a href="https://github.com/alexxliu" target="_blank">
+              <img src="./images/info/github.png" alt="GitHub Icon">  
+            </a>
+            <a href="resume.pdf" target="_blank">
+              <img src="./images/info/resume.png" alt="Resume Icon">                              
+            </a> 
+            <a href="mailto: liu3624@purdue.edu">
+              <img src="./images/info/mail.png" alt="Mail Icon">
+            </a>            
+          </div>
+        </div>
+        <div class="scroll-img">
+          <a href="#about">
+            <img src="./images/scroll-down.png" alt="">            
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <div class="section-head">
+            <h2>ABOUT ME</h2>  
+          </div>
+          <div class="about-body">
+            <p>I'm currently a computer science student at Purdue University interested in Software Engineering.</p>
+            <p>Please feel free to <a href = "#contact">reach out</a> or look at my <a href="#projects">projects</a></p>
+          </div>
+        </div>
+        <div class="skills">
+          <p>Skills</p>
+          <div class="language-icons">
+            <div class="logo hidden">
+              <img src="./images/language_icons/python.png">
+            </div>
+            <div class="logo hidden">
+              <img src="./images/language_icons/java.png">
+            </div>
+            <div class="logo hidden">
+              <img src="./images/language_icons/cpp.png">
+            </div>
+            <div class="logo hidden">
+              <img src="./images/language_icons/html.png">
+            </div>
+            <div class="logo hidden">
+              <img src="./images/language_icons/css.png">
+            </div>
+            <div class="logo hidden">
+              <img src="./images/language_icons/js.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="projects-content">
+      <section class = "hidden" id="projects">
+        <div class="project-header">
+          <h2>MY PROJECTS</h2>
+        </div>
+        <div class="project-boxes">
+          <div class="project-box">
+            <a href="https://github.com/alexxliu/FridgeGPT" target="_blank">
+              <h3>FridgeGPT</h3>
+              <h5>Full-stack project that uses ChatGPT API to create a recipe for your next meal based on what's in your fridge</h5>
+              <img src="./images/projects/fridgegpt3.5.png" alt="">
+              <p><em>React | Node.js | Express | OpenAI API | JavaScript</em></p>
+            </a>
+          </div>
+          <div class="project-box">
+            <a href="https://github.com/alexxliu/SpotiFind" target="_blank">
+              <h3>SpotiFind</h3>
+              <h5>Automatically create a playlist of new releases from artists you follow directly in your Spotify account</h5>
+              <img src="./images/projects/spotifind.png" alt="">
+              <p><em>OAuth2.0 | Spotify Web API | Flask | Python</em></p>
+            </a>
+          </div>
+        </div>
+      </section>      
+    </div>
+    <div class="footer">
+      <section class="hidden" id="contact">
+        <div class="footer-items">
+          <h2>CONTACT:</h2>
+          <a href="mailto: liu3624@purdue.edu">
+            <img src="./images/footer/white-mail.png" alt="Mail Icon">
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
