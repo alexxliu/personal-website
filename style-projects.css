@@ -71,7 +71,38 @@
     color: #222;
 }
 
+@media (min-width: 1201px) and (max-height: 1000px) {
 
+    .projects-content {
+        min-height: 700px;
+    }
+
+    .project-header {
+        margin-top: -250px;
+        margin-bottom: -100px;
+    }
+    .project-boxes {
+        width: 1000px;
+        margin-top: 125px;
+        padding-top: 0;
+    }
+
+    .project-box {
+        padding: 0;
+    }
+    .project-box h3 {
+        font-size: 20px;
+    }
+
+    .project-box h5 {
+        font-size: 12px;
+    }
+
+    .project-box p {
+        font-size: 10px;
+    }
+
+}
 @media (max-width: 1200px) {
 
     .project-header {
