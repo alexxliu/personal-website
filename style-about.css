@@ -41,64 +41,6 @@
     color: lightseagreen;
 }
 
-.skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.skills p {
-    font-size: 4.5vw;
-    font-family: 'Poppins', sans-serif;
-
-    border: 1px solid #222;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    padding-right: 2.5vw;
-    box-sizing: border-box;
-}
-
-.language-icons {
-    margin-left: 2vw;
-}
-
-.language-icons img {
-    width: 5vw;
-    height: 5vw;
-    margin-left: 3vw;
-}
-
-.logo {
-    display: inline-block;
-}
-
-.logo:nth-child(1){
-    transition-delay: 100ms;
-}
-
-.logo:nth-child(2){
-    transition-delay: 200ms;
-}
-
-.logo:nth-child(3){
-    transition-delay: 300ms;
-}
-
-.logo:nth-child(4){
-    transition-delay: 400ms;
-}
-
-.logo:nth-child(5){
-    transition-delay: 500ms;
-}
-
-.logo:nth-child(6){
-    transition-delay: 600ms;
-}
 
 @media (min-width: 1000px) {
     .about-text {
