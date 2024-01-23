@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 160vh;
+    height: 150vh;
     text-align: center;
     background-color: #fff;
 
@@ -13,7 +13,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     color: #AC9362;
-    margin-top: -420px;
+    margin-top: -600px;
 }
   
 .project-boxes1 {
@@ -38,7 +38,7 @@
     max-width: 1500px;
     margin-top: 20px;
     height: 400px;
-    margin-bottom: -500px;
+    margin-bottom: -600px;
     padding-top: 30px;
 } 
   
@@ -87,11 +87,11 @@
 @media (min-width: 1201px) and (max-height: 1000px) {
 
     .projects-content {
-        min-height: 700px;
+        min-height: 950px;
     }
 
     .project-header {
-        margin-top: -250px;
+        margin-top: -520px;
         margin-bottom: -100px;
     }
     .project-boxes1 {
@@ -102,7 +102,7 @@
 
     .project-boxes2 {
         width: 1150px;
-        margin-top: 125px;
+        margin-top: 250px;
         padding-top: 0;
     }
 
@@ -124,22 +124,40 @@
 }
 @media (max-width: 1200px) {
 
+    .projects-content {
+        max-height: 700px
+    }
+
     .project-header {
         font-size: 25px;
-        margin-top: -450px;
+        margin-top: -320px;
     }
 
     .project-boxes1 {
+        max-height: 220px;
         gap: 0;
         width: 300px;
         max-width: 300px;
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center boxes horizontally */
+        /* flex-direction: column; 
+        align-items: center;  */
+        flex-wrap: nowrap;
+        margin-top: 0px;
+        gap: 10px;
+        padding-top: 10px;
+    } 
+
+    .project-boxes2 {
+        max-height: 220px;
+        gap: 0;
+        width: 300px;
+        max-width: 300px;
+        /* flex-direction: column; 
+        align-items: center;  */
         flex-wrap: nowrap;
         margin-top: 220px;
         gap: 10px;
         padding-top: 10px;
-    }
+    } 
 
     .projects-content {
         height: 950px;
