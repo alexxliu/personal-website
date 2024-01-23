@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 160vh;
     text-align: center;
     background-color: #fff;
 
@@ -16,7 +16,7 @@
     margin-top: -420px;
 }
   
-.project-boxes {
+.project-boxes1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,6 +28,19 @@
     margin-bottom: -200px;
     padding-top: 30px;
 }
+
+.project-boxes2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+    width: 1500px;
+    max-width: 1500px;
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: -500px;
+    padding-top: 30px;
+} 
   
 .project-box {
     flex: 1;
@@ -81,7 +94,13 @@
         margin-top: -250px;
         margin-bottom: -100px;
     }
-    .project-boxes {
+    .project-boxes1 {
+        width: 1150px;
+        margin-top: 125px;
+        padding-top: 0;
+    }
+
+    .project-boxes2 {
         width: 1150px;
         margin-top: 125px;
         padding-top: 0;
@@ -110,7 +129,7 @@
         margin-top: -450px;
     }
 
-    .project-boxes {
+    .project-boxes1 {
         gap: 0;
         width: 300px;
         max-width: 300px;
