@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 160vh;
     text-align: center;
     background-color: #fff;
 
@@ -102,7 +102,7 @@
 
     .project-boxes2 {
         width: 1150px;
-        margin-top: 250px;
+        margin-top: 230px;
         padding-top: 0;
     }
 
