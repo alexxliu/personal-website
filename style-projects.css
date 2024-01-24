@@ -21,8 +21,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px; /* Adjust the gap between the boxes */
-    width: 1500px;
-    max-width: 1500px;
+    width: 1300px;
+    max-width: 1300px;
     margin-top: 20px;
     height: 400px;
     margin-bottom: -200px;
@@ -34,8 +34,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px; 
-    width: 1500px;
-    max-width: 1500px;
+    width: 1300px;
+    max-width: 1300px;
     margin-top: 20px;
     height: 400px;
     margin-bottom: -600px;
